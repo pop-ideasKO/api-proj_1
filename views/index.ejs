@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Joke Generator</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <h1>Here's a Joke for You!</h1>
+    <% if (joke.type === "single") { %>
+        <p><%= joke.joke %></p>
+    <% } else { %>
+        <p><strong>Setup:</strong> <%= joke.setup %></p>
+        <p><strong>Punchline:</strong> <%= joke.delivery %></p>
+    <% } %>
+</body>
+</html>
